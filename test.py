@@ -10,14 +10,14 @@ st.title("Prediksi Kelas Cuaca")
 st.markdown("Masukkan data iklim untuk memprediksi kelas cuaca:")
 
 # Input form
-temp_average = st.number_input("Suhu Rata-rata (°C)", value=27.5)
-temp_max = st.number_input("Suhu Maksimum (°C)", value=32.0)
-curah_hujan = st.number_input("Curah Hujan (mm)", value=150.2)
-penyinaran_matahari = st.number_input("Penyinaran Matahari (jam)", value=7.4)
-kelembaban_average = st.number_input("Kelembaban Rata-rata (%)", value=80.5)
-kec_angin_average = st.number_input("Kecepatan Angin Rata-rata (m/s)", value=3.2)
-arah_angin_most = st.number_input("Arah Angin Paling Sering (°)", value=180.0)
-arah_angin = st.number_input("Arah Angin Saat Ini (°)", value=190.0)
+temp_average = st.number_input("Suhu Rata-rata (°C)")
+temp_max = st.number_input("Suhu Maksimum (°C)")
+curah_hujan = st.number_input("Curah Hujan (mm)")
+penyinaran_matahari = st.number_input("Penyinaran Matahari (%)")
+kelembaban_average = st.number_input("Kelembaban Rata-rata (%)")
+kec_angin_average = st.number_input("Kecepatan Angin Rata-rata (m/s)")
+arah_angin_most = st.number_input("Arah Angin Paling Sering (°)")
+arah_angin = st.number_input("Arah Angin Saat Ini (°)")
 
 if st.button("Prediksi Kelas Cuaca"):
     input_data = np.array([
